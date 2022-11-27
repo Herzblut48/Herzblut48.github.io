@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <style>
+            #adv_text {
+                margin-top: 50px;
+                margin-left: 50px;
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+                color:indianred;
+            }
+            #find_text {
+                margin-top: 50px;
+                margin-left: 50px;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                color:black;
+            }
+            .lab_txt{
+                margin-top: 10px;
+                margin-left: 50px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+                color:black;
+            }
+            form > lable, input {
+                margin-top: 10px;
+            }
+            .q_text {
+                width: 500px;
+                height: 25px;
+                border-width: 1px;
+                border-color:gainsboro;
+                border-style: solid;
+                margin-top: 15px;
+            }
+            #submit_but {
+                height: 30px;
+                width: 100px;
+                border-radius: 3px;
+                border: none;
+                color: white;
+                background-color:dodgerblue;
+                margin-top: 15px;
+                margin-left: 655px;
+            }
+            #submit_but:active {
+                border-style:double;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="adv_text">
+            Advanced Search
+        </div>
+        <hr style="height:1px;border-width:0;background-color:darkgray; margin-top:40px">
+        <div id="find_text">
+            Find Pages
+            <span style="color:darkgray; margin-left: 700px; font-size:13px; font-weight: bold;">How it works in default search</span>
+        </div>
+        <form action="https://www.google.com/search" method="get" name="f">
+            <label class="lab_txt"> all these words: </label>
+            <input style="margin-left: 100px;" class="q_text" id="all" type="text" name="as_q"><br>
+            <label class="lab_txt">this exact word or phrase:</label>
+            <input style="margin-left: 36px;" class="q_text" id="word" type="text" name="as_epq"><br>
+            <label class="lab_txt">any of these words:</label>
+            <input style="margin-left: 75px;" class="q_text" id="any" type="text" name="as_oq"><br>
+            <label class="lab_txt">none of these words:</label>
+            <input style="margin-left: 65px;" class="q_text" id="none" type="text" name="as_eq"><br>
+            <input id="submit_but" type="submit" value="Find">
+        </form>
+    </body>
+</html>

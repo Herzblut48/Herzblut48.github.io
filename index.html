@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Search</title>
+        <style>
+            #q_text {
+                width: 500px;
+                height: 25px;
+                border-radius: 20px;
+                border-width: 1px;
+                border-color:gainsboro;
+                border-style: solid;
+                margin-top: 15px;
+            }
+            #submit_but {
+                height: 30px;
+                border-radius: 5px;
+                border-style: none;
+                margin-top: 15px;
+                margin-left: 190px;
+            }
+            #submit_but:hover {
+                border-style: solid;
+                border-color:darkgray;
+                border-width: 1px;
+            }
+            .container_search {
+                margin-left: 650px;
+                margin-top: 350px;
+            }
+            .container_links{
+                text-align: right;
+            }
+            .container_links > a{
+                padding-right: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container_links">
+            <a href="google_images.html">Google Images</a>
+            <a href="google_advanced.html">Advanced Search</a>
+        </div>
+        <form action="https://www.google.com/search">
+            <div class="container_search">
+                <div>
+                    <input id="q_text" type="text" name="q">
+                </div>
+                <div>
+                    <input id="submit_but" type="submit" value="Google Search">
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
